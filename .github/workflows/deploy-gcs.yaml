@@ -27,4 +27,5 @@ jobs:
 
     - name: Deploy via GCS
       run: |
-        gsutil -m rsync -r . gs://dags-airflow-bedu/
+        gsutil -m rm -rf gs://dags-airflow-bedu/* || echo "$?"
+        gsutil -m cp -r * gs://dags-airflow-bedu/
