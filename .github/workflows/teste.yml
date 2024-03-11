@@ -27,4 +27,4 @@ jobs:
 
     - name: Deploy via GCS
       run: |
-        gsutil -m cp -r * gs://dags-airflow-bedu/prd/dags
+        gsutil -m cp -r * gs://dags-airflow-bedu/dags
