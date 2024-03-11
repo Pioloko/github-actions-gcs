@@ -4,7 +4,7 @@ name: GCS Deployment-prd
 # events but only for the main branch
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     workflow_dispatch: # Put here!!
 
 
